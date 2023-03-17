@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Favorite Song</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="main.js"></script>
+</head>
+
+  <body>
+    <h1 align="center">Jamey's Favorite Song</h1>
+    <div align="center">
+      <iframe width="1120" height="420"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+    </div>
+  
+    <canvas id="canvas" width="1125" height="420" class="marquee_info"></canvas>  
+    
+  <div class="marquee_info">
+    <marquee direction="left" height="50" width="1125" bgcolor="white"> You are watching Jamey Babiuk's Classic </marquee>
+  </div>
+  <script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		
+		var x = canvas.width/2;
+		var y = canvas.height/2;
+		var dx = 2;
+		var dy = -2;
+		var radius = 31;
+		
+		setInterval(draw, 7);
+	</script>
+  </body>
+</html>
